@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgb"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/mplusextrabold"
+        android:paddingTop="90dp"
+        android:text="@string/Registrasi"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:fontFamily="@font/mplusbold"
+            android:hint="@string/Nama"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/gender_list"
+            android:fontFamily="@font/mplusbold"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:fontFamily="@font/mplusbold"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtTelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:fontFamily="@font/mplusbold"
+            android:hint="@string/telp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:fontFamily="@font/mplusbold"
+            android:gravity="top"
+            android:hint="@string/alamat"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/mplusbold"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/simpan"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+</LinearLayout>
